@@ -100,14 +100,14 @@ def stats_report(mylist):
              "PPV = " + str(ppv) + '\n' + \
              "NPV = " + str(npv) + '\n'
 
-    print("F-1 = ", F1(mylist))
-    print("F-B = ", FB(mylist))
-    print("SEN = ", Sensitivity(mylist))
-    print("SPE = ", Specificity(mylist))
-    print("BAC = ", BAC(mylist))
-    print("ACC = ", ACC(mylist))
-    print("PPV = ", PPV(mylist))
-    print("NPV = ", NPV(mylist))
+    # print("F-1 = ", F1(mylist))
+    # print("F-B = ", FB(mylist))
+    # print("SEN = ", Sensitivity(mylist))
+    # print("SPE = ", Specificity(mylist))
+    # print("BAC = ", BAC(mylist))
+    # print("ACC = ", ACC(mylist))
+    # print("PPV = ", PPV(mylist))
+    # print("NPV = ", NPV(mylist))
 
     return output
 
@@ -156,7 +156,7 @@ class ToTensor(object):
 
 
 class IEGM_DataSET():
-    def __init__(self, root_dir, indice_dir, mode, size, transform=None):
+    def __init__(self, root_dir, indice_dir, mode, size, subject_id=None, transform=None):
         self.root_dir = root_dir
         self.indice_dir = indice_dir
         self.size = size
@@ -166,7 +166,11 @@ class IEGM_DataSET():
         csvdata_all = loadCSV(os.path.join(self.indice_dir, mode + '_indice.csv'))
 
         for i, (k, v) in enumerate(csvdata_all.items()):
-            self.names_list.append(str(k) + ' ' + str(v[0]))
+            # Check if the subject ID matches
+            if subject_id is not None and k.startswith(subject_id):
+                self.names_list.extend([f"{k} {filename}" for filename in v])
+            elif subject_id is None:
+                self.names_list.append(str(k) + ' ' + str(v[0]))
 
     def __len__(self):
         return len(self.names_list)
@@ -175,8 +179,18 @@ class IEGM_DataSET():
         text_path = self.root_dir + self.names_list[idx].split(' ')[0]
 
         if not os.path.isfile(text_path):
-            print(text_path + 'does not exist')
+            print(text_path + ' does not exist')
             return None
+
+        IEGM_seg = txt_to_numpy(text_path, self.size).reshape(1, self.size, 1)
+        label = int(self.names_list[idx].split(' ')[1])
+        sample = {'IEGM_seg': IEGM_seg, 'label': label}
+
+        if self.transform:
+            sample = self.transform(sample)
+
+        return sample
+
 
         IEGM_seg = txt_to_numpy(text_path, self.size).reshape(1, self.size, 1)
         label = int(self.names_list[idx].split(' ')[1])
