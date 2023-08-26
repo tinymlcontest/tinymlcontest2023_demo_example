@@ -22,7 +22,7 @@
 
      Embedded ST-Link/V2-1 debugger/programmer
 
-     ![L432](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/L432.jpg)
+     ![](https://raw.githubusercontent.com/zhuiyi1314/TinyML/img/STM32L031K6T6.png)
 
   
 
