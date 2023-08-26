@@ -22,7 +22,7 @@
 
      Embedded ST-Link/V2-1 debugger/programmer
 
-     ![STM32L031K6T6](https://raw.githubusercontent.com/zhuiyi1314/TinyML/img/STM32L031K6T6.png)
+     ![L031K6T6](https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/STM32L031K6T6.png)
 
   
 
