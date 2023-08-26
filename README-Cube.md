@@ -14,11 +14,11 @@
 
      https://www.st.com/content/my_st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-utilities/stsw-link009.license=1656325086116.product=STSW-LINK009.version=2.0.2.html
 
-  4. NUCLEO-L432KC
+  4. STM32L031K6T6
 
-     Arm Cortex-M4 core at 80 MHz
+     Arm Cortex-M0+ core at 32 MHz
 
-     256 Kbytes of Flash memory, 64 Kbytes of SRAM
+     32 Kbytes of Flash memory, 8 Kbytes of SRAM
 
      Embedded ST-Link/V2-1 debugger/programmer
 
