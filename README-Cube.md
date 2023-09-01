@@ -85,7 +85,10 @@
      <img src="https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/15l.jpg" alt="image-20220627203515997" style="zoom: 25%;" />
 
   2. Open project in MDK5 and build.
+      First, Check the ***startup_stm32f303x8.s*** file.
+         ![build](https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/110.png)
 
+      Then，build the project.
      ![build](https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/14.png)
 
   3. Check if the debugger is connected.
