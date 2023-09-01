@@ -82,7 +82,7 @@
 
   1. Connet the boadr to computer.
 
-     <img src="https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/15l.png" alt="image-20220627203515997" style="zoom: 25%;" />
+     <img src="https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/15l.jpg" alt="image-20220627203515997" style="zoom: 25%;" />
 
   2. Open project in MDK5 and build.
 
