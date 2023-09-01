@@ -6,7 +6,7 @@ import torch
 import torchvision.transforms as transforms
 from copy import deepcopy
 from torch.utils.data import DataLoader
-from help_code_demo1 import ToTensor, IEGM_DataSET, F1, FB, Sensitivity, Specificity, BAC, ACC, PPV, NPV
+from help_code_demo import ToTensor, IEGM_DataSET, F1, FB, Sensitivity, Specificity, BAC, ACC, PPV, NPV
 
 def main():
     seed = 222
