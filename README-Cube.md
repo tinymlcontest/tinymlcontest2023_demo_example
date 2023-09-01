@@ -82,11 +82,11 @@
 
   1. Connet the boadr to computer.
 
-     <img src="https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/14.png" alt="image-20220627203515997" style="zoom: 25%;" />
+     <img src="https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/15l.png" alt="image-20220627203515997" style="zoom: 25%;" />
 
   2. Open project in MDK5 and build.
 
-     ![build](https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/15.png)
+     ![build](https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/14.png)
 
   3. Check if the debugger is connected.
 
