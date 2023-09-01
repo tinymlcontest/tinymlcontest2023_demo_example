@@ -32,99 +32,99 @@
 
      ![mainmenu](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/mainmenu.png)
 
-     ![select board](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/select%20board.png)
+     ![select board](https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/2.png)
 
   2. Click ***Software Packs --- Manage Software Packs*** and 
 
-     ![manage software packs](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/manage%20software%20packs.png)
+     ![manage software packs](https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/3.png)
 
      Click the check box of <u>Artifacial Intelligence( v7.1.0 )</u> under **X.CUBE.AI** and click ***Install Now.***
 
-     ![install](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/install.png)
+     ![install](https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/4.png)
 
   3. Click ***Software Packs --- Select Components*** and set option as follow.
 
-     ![components](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/components.png)
+     ![components](https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/5.png)
 
-     ![Snipaste_2022-07-09_16-19-42](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/Snipaste_2022-07-09_16-19-42.png)
+     ![Snipaste_2022-07-09_16-19-42](https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/6.png)
 
   4. Set PA2 as VCP_TX, and set PA15 as VCP_RX.
 
-     ![pins](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/pins.png)
+     ![pins](https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/7.png)
 
   5. Set Connectivity.
 
-     ![connectivity](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/connectivity.png)
+     ![connectivity](https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/8.png)
 
   6. Set AI network
 
      First, set the communication options as follow
 
-     ![plantform setting](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/plantform%20setting.png)
+     ![plantform setting](https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/9.png)
 
      Then click ***Add network*** and import ours model by follow steps shown in the picture.
 
-     ![image-20220627201730152](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/image-20220627201730152.png)
+     ![image-20220627201730152](https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/10.png)
 
      After choosing model, you can click ***Analyze*** to view the resources needed to run the model.
 
-     ![image-20220627202020441](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/image-20220627202020441.png)
+     ![image-20220627202020441](https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/11.png)
 
   7. Set Clock
 
-     ![clock](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/clock.png)
+     ![clock](https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/12.png)
 
   8. Finish settings and click ***GENERATE CODE***
 
-     ![project manager](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/project%20manager.png)
+     ![project manager](https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/13.png)
 
   ## Load Program to Board
 
   1. Connet the boadr to computer.
 
-     <img src="https://raw.githubusercontent.com/AugustZTR/picbed/master/img/image-20220627203515997.png" alt="image-20220627203515997" style="zoom: 25%;" />
+     <img src="https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/14.png" alt="image-20220627203515997" style="zoom: 25%;" />
 
   2. Open project in MDK5 and build.
 
-     ![build](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/build.png)
+     ![build](https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/15.png)
 
   3. Check if the debugger is connected.
 
      First, click ***Options for Target***.
 
-     ![targets](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/targets.png)
+     ![targets](https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/16.png)
 
      Then switch to <u>Debug</u> and click ***Settings***.
 
-     <img src="https://raw.githubusercontent.com/AugustZTR/picbed/master/img/debug.png" alt="debug"  />
+     <img src="https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/17.png" alt="debug"  />
 
      If the debugger is connected, you can see the IDCODE and the Device Name. 
 
-     <img src="https://raw.githubusercontent.com/AugustZTR/picbed/master/img/swdio.png" alt="swdio"  />
+     <img src="https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/18.png" alt="swdio"  />
 
      Finally, switch to <u>Flash Download</u> and check <u>Reset and Run</u>
 
-     ![full chip](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/full%20chip.png)
+     ![full chip](https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/19.png)
 
   4. Now you can load program to the board.
 
-     ![load](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/load.png)
+     ![load](https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/20.png)
 
   ## Validation
 
   1. Click the reset button on the bottom of the board.
 
-     ![image-20220627203955477](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/image-20220627203955477.png)
+     ![image-20220627203955477](https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/21.png)
 
   2. Open CUbeMX project that we built before and switch to <u>network</u>
 
-     ![image-20220627204238965](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/image-20220627204238965.png)
+     ![image-20220627204238965](https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/22l.png)
 
   3. Click ***Validate on target*** and you can see how the model runs on the board.
 
-     ![image-20220627204444260](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/image-20220627204444260.png)
+     ![image-20220627204444260](https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/23.png)
 
-     ![image-20220627204542939](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/image-20220627204542939.png)
+     ![image-20220627204542939](https://raw.githubusercontent.com/zhuiyi1314/TinyML/main/img/24.png)
 
  
  ## Metrics
